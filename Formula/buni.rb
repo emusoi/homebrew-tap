@@ -2,28 +2,36 @@
 class Buni < Formula
   desc "Design tools for agents and people: the .buni format, a design agent, CLI and MCP"
   homepage "https://github.com/emusoi/buni"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
+
+  bottle do
+    root_url "https://github.com/emusoi/buni/releases/download/v0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "7f19bdd84b5e96437943bbd145eb6ad3f013b2e66b7fd8bb6c4fb943e5b6222c"
+    sha256 cellar: :any_skip_relocation, sonoma: "d9cc4c462e1a1d17165d6cf20733329e256aab6757d3535750ac892f7e749b76"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "9cbcd8ef61e688ed7b8de7b6953dd4df20edf0d646864c7bc0e757bda862fe99"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ccd4a3a572de5f5d4287a630fa53cbb1fd0d51b8a5764e768a2da3d9d7840492"
+  end
 
   on_macos do
     on_arm do
-      url "https://github.com/emusoi/buni/releases/download/v0.1.0/buni-0.1.0-darwin-arm64.tar.gz"
-      sha256 "433f063ecd3492abd5f2e0858389bc14542c6afcf2df53c46c2fc112f536f1e0"
+      url "https://github.com/emusoi/buni/releases/download/v0.2.0/buni-0.2.0-darwin-arm64.tar.gz"
+      sha256 "6afb81f114cff2ef752a60acd69f45a24ced37284ba8b8aa4991932d5d236ccb"
     end
     on_intel do
-      url "https://github.com/emusoi/buni/releases/download/v0.1.0/buni-0.1.0-darwin-x64.tar.gz"
-      sha256 "36ec1f86ccf5756a69289f6a5c6c0b478782dc336fab1bb628c173ec1218b09d"
+      url "https://github.com/emusoi/buni/releases/download/v0.2.0/buni-0.2.0-darwin-x64.tar.gz"
+      sha256 "515847238d143bab55f06b9330b405eb2e2850dddc9cd5b5901e422addd80d5c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/emusoi/buni/releases/download/v0.1.0/buni-0.1.0-linux-arm64.tar.gz"
-      sha256 "1d93505e19ae16b5f55e1ad1452e5aeec05ceb86f0046115acb47a944b98710b"
+      url "https://github.com/emusoi/buni/releases/download/v0.2.0/buni-0.2.0-linux-arm64.tar.gz"
+      sha256 "0d868c85c76e6fcb9c80e7a48bfa8265149b5b1cbc50f4d5126ad385135d0841"
     end
     on_intel do
-      url "https://github.com/emusoi/buni/releases/download/v0.1.0/buni-0.1.0-linux-x64.tar.gz"
-      sha256 "77efdc4e0b4f90d1e2f6a5a72fb188da86d76f8f186114d761322f137846764b"
+      url "https://github.com/emusoi/buni/releases/download/v0.2.0/buni-0.2.0-linux-x64.tar.gz"
+      sha256 "072fc2dc8f7541c5091a78ecd8292d07681e6ac59d018d1f71fb2710dc122df4"
     end
   end
 
