@@ -2,36 +2,36 @@
 class Buni < Formula
   desc "Design tools for agents and people: the .buni format, CLI, MCP and a live viewer"
   homepage "https://github.com/emusoi/buni"
-  version "0.4.1"
+  version "0.4.2"
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/emusoi/buni/releases/download/v0.4.1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "f5dd5cfe621c406c382785d865b0e3a5d2a328143ad438340d2c21123d4bef35"
-    sha256 cellar: :any_skip_relocation, sonoma: "87a6f98531b26eb0d64c238e9dadf47f4420f7609e549835d6eba0ef60ac0c30"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "6d161028cba3d29fcb3593abe5e4ace648a37d5477a644144c00615dd490afb9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e05e4905d6104f7891e9acf86c112a10d4bc5afec4c347eb3261011c1ec22702"
+    root_url "https://github.com/emusoi/buni/releases/download/v0.4.2"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "bfe9d5212c640152eea9cee5599db606ee733374a949828424b129b796a5ad99"
+    sha256 cellar: :any_skip_relocation, sonoma: "fb16e14de7dfe4060deb6a1e55c9078dc8f2772ff81f726d577e02d2fcee035b"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "acaa53d98ea1031160685fee4187007c7513fa158463a402a1b931a50c6426be"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7a56c3fcf7a75868341e96d8d55416d129b96a10323659ed4b9ad91a6f32f8cc"
   end
 
   on_macos do
     on_arm do
-      url "https://github.com/emusoi/buni/releases/download/v0.4.1/buni-0.4.1-darwin-arm64.tar.gz"
-      sha256 "c521acd13e181171f03724f117615878899e9e09f9c078a3973481cf04c939bc"
+      url "https://github.com/emusoi/buni/releases/download/v0.4.2/buni-0.4.2-darwin-arm64.tar.gz"
+      sha256 "3121a4c401b572d5a6f20623584d79b7ba6eb8c18be96eeee0053c8a88122500"
     end
     on_intel do
-      url "https://github.com/emusoi/buni/releases/download/v0.4.1/buni-0.4.1-darwin-x64.tar.gz"
-      sha256 "a10f71855712a8a085e1877f81786159939bccd4c3d9b171118442410af5e3c8"
+      url "https://github.com/emusoi/buni/releases/download/v0.4.2/buni-0.4.2-darwin-x64.tar.gz"
+      sha256 "5645db02fd92bae1bf678fe2b3cf63d9db76d33702f8cb9acd608a06508ae7a3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/emusoi/buni/releases/download/v0.4.1/buni-0.4.1-linux-arm64.tar.gz"
-      sha256 "9d481f8621bfec08995e6d847b09b9b29cbbd16e3ce10e60534ae11155900a6e"
+      url "https://github.com/emusoi/buni/releases/download/v0.4.2/buni-0.4.2-linux-arm64.tar.gz"
+      sha256 "7447a438102c108db3d080aae49fe9828098e0485e96eb819f031621eb2b75a7"
     end
     on_intel do
-      url "https://github.com/emusoi/buni/releases/download/v0.4.1/buni-0.4.1-linux-x64.tar.gz"
-      sha256 "5f2ac06fc5e58693d8ffe44203d21599b482d189646259e3e763b2a7b5e94108"
+      url "https://github.com/emusoi/buni/releases/download/v0.4.2/buni-0.4.2-linux-x64.tar.gz"
+      sha256 "b151e04b81f8ed156b4252312cb65171b69643db1aa3984bb1f9f3cf55bbd971"
     end
   end
 
